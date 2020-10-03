@@ -23,7 +23,7 @@ document.getElementById("movie-information").addEventListener("submit",function 
     const type = "&type="+movieSeries;
 
     console.log(movieTitle);
-fetch(`http://www.omdbapi.com/?apikey=1de2b15&s=${title}${year}${type}`)
+fetch(`https://www.omdbapi.com/?apikey=1de2b15&s=${title}${year}${type}`)
 .then(response =>{
     if(!response.ok){
         return;
